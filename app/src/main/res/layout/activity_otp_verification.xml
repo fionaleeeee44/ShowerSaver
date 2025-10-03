@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,10 +11,10 @@
         android:id="@+id/appLogo"
         android:layout_width="139dp"
         android:layout_height="139dp"
-        android:layout_marginTop="52dp"
         android:layout_gravity="center"
-        android:src="@drawable/ic_shower"
-        android:scaleType="fitXY" />
+        android:layout_marginTop="52dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_shower" />
 
     <TextView
         android:id="@+id/appTitle"
@@ -38,11 +39,12 @@
 
         <TextView
             android:id="@+id/otpTitle"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Enter Verification Code"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="16sp"
+            android:gravity="center"
             android:layout_marginBottom="18dp" />
 
         <LinearLayout
@@ -55,8 +57,9 @@
 
             <EditText
                 android:id="@+id/otp1"
-                android:layout_width="40dp"
+                android:layout_width="0dp"
                 android:layout_height="48dp"
+                android:layout_weight="1"
                 android:background="@drawable/otp_box"
                 android:gravity="center"
                 android:inputType="number"
@@ -66,8 +69,9 @@
 
             <EditText
                 android:id="@+id/otp2"
-                android:layout_width="40dp"
+                android:layout_width="0dp"
                 android:layout_height="48dp"
+                android:layout_weight="1"
                 android:background="@drawable/otp_box"
                 android:gravity="center"
                 android:inputType="number"
@@ -77,8 +81,9 @@
 
             <EditText
                 android:id="@+id/otp3"
-                android:layout_width="40dp"
+                android:layout_width="0dp"
                 android:layout_height="48dp"
+                android:layout_weight="1"
                 android:background="@drawable/otp_box"
                 android:gravity="center"
                 android:inputType="number"
@@ -88,8 +93,9 @@
 
             <EditText
                 android:id="@+id/otp4"
-                android:layout_width="40dp"
+                android:layout_width="0dp"
                 android:layout_height="48dp"
+                android:layout_weight="1"
                 android:background="@drawable/otp_box"
                 android:gravity="center"
                 android:inputType="number"
@@ -99,8 +105,9 @@
 
             <EditText
                 android:id="@+id/otp5"
-                android:layout_width="40dp"
+                android:layout_width="0dp"
                 android:layout_height="48dp"
+                android:layout_weight="1"
                 android:background="@drawable/otp_box"
                 android:gravity="center"
                 android:inputType="number"
@@ -110,8 +117,9 @@
 
             <EditText
                 android:id="@+id/otp6"
-                android:layout_width="40dp"
+                android:layout_width="0dp"
                 android:layout_height="48dp"
+                android:layout_weight="1"
                 android:background="@drawable/otp_box"
                 android:gravity="center"
                 android:inputType="number"
@@ -125,17 +133,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Didn’t receive a code? Resend here"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="14sp"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center" />
 
         <Button
             android:id="@+id/btnVerify"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@android:color/white"
+            app:backgroundTint="@android:color/white"
             android:text="Verify"
             android:textStyle="bold"
-            android:textSize="18sp"
-            android:backgroundTint="@android:color/holo_blue_light" />
+            android:textSize="20sp"
+            android:textColor="@android:color/black" />
     </LinearLayout>
 </LinearLayout>
